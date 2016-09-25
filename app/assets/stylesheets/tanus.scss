@@ -1,0 +1,37 @@
+body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #f2f2f2;
+  color: #333;
+  font-family: "Open Sans", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+}
+
+.container{
+    margin:auto;
+    width:400px;
+    h1{
+        text-align:center;
+    }
+}
+
+#photo{
+    width:400px;
+    height:400px;
+    border:6px double black;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+    img{
+        max-width: 380px;
+        max-height: 380px;
+        margin: auto;
+    }
+}
+#answer{
+    text-align:center;
+    font-size:30px;
+    margin:20px;
+}

@@ -1,7 +1,16 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+Tanuki.find_or_create_by(pic: 'pic/4685.jpg',race: 'タヌキ',photoby: '663highland')
+Tanuki.find_or_create_by(pic: 'pic/8462.jpg',race: 'タヌキ',photoby: '663highland')
+Tanuki.find_or_create_by(pic: 'pic/2998.jpg',race: 'タヌキ',photoby: 'Dennis Irrgang')
+Tanuki.find_or_create_by(pic: 'pic/1973.jpg',race: 'タヌキ',photoby: 'Mckinlayr')
+Tanuki.find_or_create_by(pic: 'pic/7763.jpg',race: 'アライグマ',photoby: 'Raymond Shobe')
+Tanuki.find_or_create_by(pic: 'pic/6785.jpg',race: 'アライグマ',photoby: 'Korall')
+Tanuki.find_or_create_by(pic: 'pic/3939.jpg',race: 'アライグマ',photoby: 'Fascinating Universe')
+Tanuki.find_or_create_by(pic: 'pic/4468.jpg',race: 'アライグマ',photoby: 'Everglades NPS')
+Tanuki.find_or_create_by(pic: 'pic/7983.jpg',race: 'レッサーパンダ',photoby: 'Tom Raftery')
+Tanuki.find_or_create_by(pic: 'pic/5689.jpg',race: 'レッサーパンダ',photoby: 'Brunswyk')
+Tanuki.find_or_create_by(pic: 'pic/9100.jpg',race: 'レッサーパンダ',photoby: '山下 良子')
+Tanuki.find_or_create_by(pic: 'pic/2517.jpg',race: 'レッサーパンダ',photoby: 'Catatine')
+Tanuki.find_or_create_by(pic: 'pic/5000.jpg',race: 'ハクビシン',photoby: 'Denise Chan')
+Tanuki.find_or_create_by(pic: 'pic/7198.jpg',race: 'アナグマ',photoby: 'OpenCage')
+Tanuki.find_or_create_by(pic: 'pic/6388.jpg',race: 'メガネザル',photoby: 'Sakurai Midori')
+

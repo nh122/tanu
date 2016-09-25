@@ -1,0 +1,2 @@
+module TanusHelper
+end

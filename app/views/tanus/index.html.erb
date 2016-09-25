@@ -1,7 +1,8 @@
 <h1>【タヌキオアノット】</h1>
 <div id="photo">
     <%= image_tag @tanuki.pic, class: 'tanuki_photo' %>
-</diV>
+</div>
+<div id="author">Photo by <%= @tanuki.photoby %></div>
 <div id="answer">
     <%= link_to 'タヌキ', tanucheck_path(race: 'タヌキ', realrace: @tanuki.race), remote: true, method: 'post' %>
     ／

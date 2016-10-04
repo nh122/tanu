@@ -1,9 +1,26 @@
 class TanusController < ApplicationController
+  @@lastid = 0
+  
   def index
     logger.debug "-index---------------------------------------------"
+    logger.debug "-@@lastid---------------------"
+    logger.debug @@lastid
+    
     logger.debug "-@tanuki.id---------------------------------------------"
     @tanuki = Tanuki.order("RANDOM()").first
     logger.debug @tanuki.id
+    
+    
+    if @tanuki.id == @@lastid
+      logger.debug "前回と同じ値"
+      @tanuki = Tanuki.find((@tanuki.id) % Tanuki.count + 1)
+      logger.debug "-@tanuki.id変更----------------------"
+      logger.debug @tanuki.id
+    end
+
+    logger.debug "-@@lastid更新---------------------"
+    @@lastid = @tanuki.id
+    logger.debug @@lastid
 
     logger.debug @tanuki
     logger.debug @tanuki.pic

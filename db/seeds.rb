@@ -13,4 +13,4 @@ Tanuki.find_or_create_by(pic: 'pic/2517.jpg',race: 'レッサーパンダ',photo
 Tanuki.find_or_create_by(pic: 'pic/5000.jpg',race: 'ハクビシン',photoby: 'Denise Chan')
 Tanuki.find_or_create_by(pic: 'pic/7198.jpg',race: 'アナグマ',photoby: 'OpenCage')
 Tanuki.find_or_create_by(pic: 'pic/6388.jpg',race: 'メガネザル',photoby: 'Sakurai Midori')
-
+Tanuki.find_or_create_by(pic: 'pic/1999.jpg',race: 'タヌキ',photoby: 'ミニネットZOO',url: 'http://mininetzoo.com/index.html')

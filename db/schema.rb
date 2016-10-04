@@ -17,6 +17,9 @@ ActiveRecord::Schema.define(version: 20160925094426) do
     t.string   "pic"
     t.string   "race"
     t.string   "photoby"
+    t.text     "url"
+    t.integer  "trial"
+    t.integer  "correct"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

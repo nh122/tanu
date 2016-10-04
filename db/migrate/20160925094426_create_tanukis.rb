@@ -4,6 +4,10 @@ class CreateTanukis < ActiveRecord::Migration
       t.string :pic
       t.string :race
       t.string :photoby
+      t.text :url
+
+      t.integer :trial, default: 0
+      t.integer :correct, default: 0
 
       t.timestamps null: false
     end

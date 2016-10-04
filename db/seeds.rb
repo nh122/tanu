@@ -16,3 +16,4 @@ Tanuki.find_or_create_by(pic: 'pic/6388.jpg',race: 'メガネザル',photoby: 'S
 Tanuki.find_or_create_by(pic: 'pic/1999.jpg',race: 'タヌキ',photoby: 'ミニネットZOO',url: 'http://mininetzoo.com/index.html')
 Tanuki.find_or_create_by(pic: 'pic/3100.jpg',race: 'アライグマ',photoby: 'ミニネットZOO',url: 'http://mininetzoo.com/index.html')
 Tanuki.find_or_create_by(pic: 'pic/3258.jpg',race: 'ミーアキャット',photoby: 'ミニネットZOO',url: 'http://mininetzoo.com/index.html')
+Tanuki.find_or_create_by(pic: 'pic/5012.jpg',race: 'マングース',photoby: 'ミニネットZOO',url: 'http://mininetzoo.com/index.html')

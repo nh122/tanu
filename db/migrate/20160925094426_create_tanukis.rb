@@ -6,8 +6,8 @@ class CreateTanukis < ActiveRecord::Migration
       t.string :photoby
       t.text :url
 
-      t.integer :trial, default: 0
-      t.integer :correct, default: 0
+      t.integer :trial, null: false, default: 0
+      t.integer :correct, null: false, default: 0
 
       t.timestamps null: false
     end

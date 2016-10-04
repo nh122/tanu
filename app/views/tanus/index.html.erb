@@ -4,7 +4,8 @@
 </div>
 <div id="author">Photo by <% if @tanuki.url == nil %><%= @tanuki.photoby %><% else %><%= link_to @tanuki.photoby, @tanuki.url, target: 'blank' %><% end %></div>
 <div id="answer">
-    <%= link_to 'タヌキ', tanucheck_path(race: 'タヌキ', realrace: @tanuki.race), remote: true, method: 'post' %>
+    <%= link_to 'タヌキ', tanucheck_path(race: 'タヌキ', record: @tanuki.id), remote: true, method: 'post' %>
     ／
-    <%= link_to 'タヌキではない', tanucheck_path(race: 'タヌキではない', realrace: @tanuki.race), remote: true, method: 'post' %>
+    <%= link_to 'タヌキではない', tanucheck_path(race: 'タヌキではない', record: @tanuki.id), remote: true, method: 'post' %><br>
+    正解率：<% if @tanuki.trial == 0 %>--<% else %><%= 100.0 * @tanuki.correct / @tanuki.trial %><% end %>％
 </div>

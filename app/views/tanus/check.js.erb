@@ -1,1 +1,4 @@
 $("#answer").html("<%= escape_javascript(render(@result)) %>");
+$('body').css({
+    backgroundImage: 'url("<%= asset_path 'pic/' + @result + '.gif' %>")'
+});

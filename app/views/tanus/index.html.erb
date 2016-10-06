@@ -7,5 +7,5 @@
     <%= link_to 'タヌキ', tanucheck_path(race: 'タヌキ', record: @tanuki.id), remote: true, method: 'post' %>
     ／
     <%= link_to 'タヌキではない', tanucheck_path(race: 'タヌキではない', record: @tanuki.id), remote: true, method: 'post' %><br>
-    一般正解率：<% if @tanuki.trial == 0 %>--<% else %><%= 100 * @tanuki.correct / @tanuki.trial %><% end %>％
+    一般正解率：<% if @tanuki.trial == 0 %>--<% else %><%= 100 * @tanuki.correct / @tanuki.trial %><% end %>％(<%= @tanuki.trial %>人中)
 </div>

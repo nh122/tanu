@@ -1,5 +1,6 @@
 class TanusController < ApplicationController
   @@lastid = 0
+  @@random = Random.new
   
   def index
     logger.debug "-index---------------------------------------------"
@@ -7,9 +8,9 @@ class TanusController < ApplicationController
     logger.debug @@lastid
     
     logger.debug "-@tanuki.id---------------------------------------------"
-    @tanuki = Tanuki.order("RANDOM()").first
+    @tanuki = Tanuki.find(@@random.rand(1..Tanuki.count))
     logger.debug @tanuki.id
-    
+
     
     if @tanuki.id == @@lastid
       logger.debug "前回と同じ値"
